@@ -39,3 +39,5 @@ jobs:
           git add .
           git commit -m "persist tokens trigger by ${{ github.event_name }}"
           git push origin master
+permissions:
+  contents: write  # 授予对代码内容的写权限（包括推送、拉取等）
